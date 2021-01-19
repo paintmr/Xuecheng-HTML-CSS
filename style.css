@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f3f5f7;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.w {
+  width: 1200px;
+  margin: auto;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+.header {
+  height: 42px;
+  margin: 30px auto; /*此地层叠w里面的margin*/
+}
+.logo {
+  float: left;
+  width: 198px;
+  height: 43px;
+}
+.nav {
+  float: left;
+  margin: 0 72px 0 60px;
+}
+.nav ul li {
+  float: left;
+}
+.nav ul li a {
+  display: block;
+  height: 40px;
+  padding: 0 23px;
+  color: #050505;
+  text-align: center;
+  line-height: 40px;
+}
+.nav ul li a:hover {
+  border-bottom: 3px solid #00a4ff;
+  color: #00a4ff;
+}
+.search {
+  float: left;
+  height: 40px;
+}
+.search input {
+  float: left;
+  height: 38px;
+  width: 340px;
+  border: 1px solid #00a4ff;
+  outline: none;
+  color: #bfbfbf;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.search button {
+  float: left;
+  width: 50px;
+  height: 42px;
+  border: 0;
+  background: url(images/header-nav-search.png) 0 -1px;
+}
+.user {
+  float: right;
+  margin: 6px 35px 0 0;
+}
+.user span {
+  float: right;
+  margin: 8px 0 0 8px;
+  line-height: 14px;
+  font-size: 14px;
+  color: #666;
+}
