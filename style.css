@@ -87,3 +87,149 @@ a {
   font-size: 14px;
   color: #666;
 }
+.banner {
+  height: 421px;
+  background-color: #1c036c;
+}
+.banner .w {
+  height: 421px;
+  background: url(images/banner-background.png) no-repeat top center;
+}
+.banner .subnav {
+  float: left;
+  height: 421px;
+  width: 193px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.banner .subnav li {
+  margin: 30px 0 0 22px;
+  line-height: 14px;
+  font-size: 14px;
+}
+.banner .subnav li a {
+  color: #fff;
+}
+.banner .subnav li a:hover {
+  color: #00b4ff;
+}
+.banner .subnav li span {
+  float: right;
+  margin-right: 21px;
+}
+.banner .course {
+  float: right;
+  width: 230px;
+  height: 300px;
+  margin-top: 50px;
+}
+.banner .course h2 {
+  width: 230px;
+  height: 50px;
+  background-color: #9bceea;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 48px;
+}
+.banner .course .course-detail {
+  height: 250px;
+  background-color: #fff;
+}
+.banner .course .course-detail li {
+  height: 30px;
+  margin: 0 20px 0 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.banner .course .course-detail h4 {
+  color: #4e4e4e;
+  font-size: 16px;
+  font-weight: 400;
+}
+.banner .course .course-detail p {
+  color: #a5a5a5;
+  font-size: 12px;
+}
+.banner .course .course-detail a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: 6px 15px 13px 14px;
+  border: 1px solid #00a4ff;
+  color: #00a4ff;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 700;
+}
+.recommendation-nav {
+  height: 60px;
+  margin-top: 8px;
+  background-color: #fff;
+  line-height: 60px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.recommendation-nav h3 {
+  float: left;
+  margin: 0 35px;
+  color: #00a4ff;
+  font-size: 16px;
+}
+.recommendation-nav ul {
+  float: left;
+}
+.recommendation-nav ul li {
+  float: left;
+}
+.recommendation-nav ul li a {
+  padding: 0 35px;
+  border-left: 1px solid #bfbfbf;
+  color: #050505;
+  font-size: 16px;
+}
+.recommendation-nav > a {
+  float: right;
+  margin-right: 27px;
+  color: #00a4ff;
+}
+.recommendation {
+  margin-top: 35px;
+}
+.recommendation-head {
+  height: 22px;
+  padding-right: 30px;
+}
+.recommendation-head h3 {
+  float: left;
+  font-size: 20px;
+  font-weight: 400;
+}
+.recommendation-head a {
+  float: right;
+  color: #a5a5a5;
+  font-size: 12px;
+}
+.recommendation ul {
+  width: 1215px;
+  margin-top: 20px;
+}
+.recommendation ul li {
+  float: left;
+  width: 228px;
+  margin: 0 15px 15px 0;
+  background-color: #fff;
+}
+.recommendation ul li h4 {
+  width: 185px;
+  margin: 25px 0 20px 25px;
+  color: #050505;
+  font-size: 14px;
+}
+.recommendation ul li div {
+  margin-left: 25px;
+  color: #ff7c2d;
+  font-size: 12px;
+}
+.recommendation ul li div span {
+  margin-left: 10px;
+  color: #999999;
+}
