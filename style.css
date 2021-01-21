@@ -4,6 +4,7 @@
 }
 body {
   background-color: #f3f5f7;
+  height: 2000px;
 }
 li {
   list-style: none;
@@ -215,6 +216,7 @@ a {
 .recommendation ul li {
   float: left;
   width: 228px;
+  height: 270px;
   margin: 0 15px 15px 0;
   background-color: #fff;
 }
@@ -231,5 +233,77 @@ a {
 }
 .recommendation ul li div span {
   margin-left: 10px;
+  color: #999999;
+}
+.coding-courses {
+  margin-top: 35px;
+}
+.coding-courses-head {
+  height: 40px;
+}
+.coding-courses-head > h3 {
+  float: left;
+  margin-right: 300px;
+  color: #494949;
+  font-size: 20px;
+  font-weight: 400;
+}
+.coding-courses-head > ul {
+  float: left;
+}
+.coding-courses-head > ul > li {
+  float: left;
+  margin-left: 70px;
+}
+.coding-courses-head > ul > li > a {
+  color: #868686;
+  font-size: 16px;
+}
+.coding-courses-head .active-color {
+  color: #00a4ff;
+}
+.coding-courses-head > a {
+  float: right;
+  color: #a5a5a5;
+  font-size: 12px;
+}
+.coding-courses-body-left {
+  float: left;
+  width: 228px;
+  height: 392px;
+  background: url(./images/coding-courses-left.png) no-repeat;
+}
+.coding-courses-body-right {
+  float: right;
+}
+.coding-courses-body-right-head {
+  width: 957px;
+  height: 100px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  background: url(./images/coding-courses-right-top.png) no-repeat;
+}
+.coding-courses-body-right-bottom li {
+  float: left;
+  width: 228px;
+  height: 267px;
+  margin-left: 15px;
+  background-color: #fff;
+}
+.coding-courses-body-right-bottom h4 {
+  width: 185px;
+  margin: 20px 25px 15px 25px;
+  color: #050505;
+  font-size: 14px;
+  font-weight: 400;
+}
+.coding-courses-body-right-bottom div {
+  margin-left: 25px;
+  height: 15px;
+  color: #ff7c2d;
+  font-size: 12px;
+}
+.coding-courses-body-right-bottom div span {
+  margin-left: 5px;
   color: #999999;
 }
