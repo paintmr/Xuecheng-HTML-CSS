@@ -4,7 +4,6 @@
 }
 body {
   background-color: #f3f5f7;
-  height: 2000px;
 }
 li {
   list-style: none;
@@ -306,4 +305,52 @@ a {
 .coding-courses-body-right-bottom div span {
   margin-left: 5px;
   color: #999999;
+}
+.footer {
+  height: 415px;
+  margin-top: 40px;
+  background-color: #fff;
+}
+.copyright {
+  float: left;
+  margin-top: 35px;
+}
+.copyright p {
+  margin-top: 25px;
+  color: #666;
+  font-size: 12px;
+}
+.copyright a {
+  display: block;
+  width: 118px;
+  height: 33px;
+  margin-top: 15px;
+  border: 1px solid #00a4ff;
+  color: #00a4ff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 33px;
+}
+.info {
+  float: left;
+  margin-top: 35px;
+  margin-left: 95px;
+}
+.info dl {
+  float: left;
+  margin-left: 120px;
+}
+.info dt {
+  margin-bottom: 15px;
+}
+.info dt > a {
+  color: #333;
+  font-size: 16px;
+}
+.info dd {
+  margin-bottom: 10px;
+}
+.info dd > a {
+  color: #333;
+  font-size: 12px;
 }
