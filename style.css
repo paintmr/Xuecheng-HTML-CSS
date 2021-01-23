@@ -213,6 +213,7 @@ a {
   margin-top: 20px;
 }
 .recommendation ul li {
+  position: relative;
   float: left;
   width: 228px;
   height: 270px;
@@ -233,6 +234,11 @@ a {
 .recommendation ul li div span {
   margin-left: 10px;
   color: #999999;
+}
+.hot {
+  position: absolute;
+  top: 5px;
+  right: -4px;
 }
 .coding-courses {
   margin-top: 35px;
