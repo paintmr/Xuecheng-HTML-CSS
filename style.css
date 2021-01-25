@@ -88,6 +88,7 @@ a {
   color: #666;
 }
 .banner {
+  position: relative;
   height: 421px;
   background-color: #1c036c;
 }
@@ -115,6 +116,28 @@ a {
 .banner .subnav li span {
   float: right;
   margin-right: 21px;
+}
+.banner .carousel-dots {
+  position: absolute;
+  left: 50%;
+  margin-left: -117px;
+  bottom: 35px;
+}
+.banner .carousel-dots li {
+  float: left;
+}
+.banner .carousel-dots li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-right: 17px;
+  background-color: #64b6e6;
+  border-radius: 50%;
+}
+.banner .carousel-dots .active {
+  width: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
 }
 .banner .course {
   float: right;
