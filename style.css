@@ -383,3 +383,36 @@ a {
   color: #333;
   font-size: 12px;
 }
+.career-plans-tag {
+  position: fixed;
+  top: 35%;
+  width: 30px;
+  height: 100px;
+  padding-top: 15px;
+  padding-left: 10px;
+  background: rgba(28, 3, 108, 0.7);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.career-plans-tag a {
+  color: #fff;
+}
+.career-plans-tag:hover .career-plans {
+  display: block;
+}
+.career-plans {
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  padding: 10px 10px 0 10px;
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.career-plans li {
+  margin-bottom: 10px;
+}
+.career-plans a {
+  color: #4e4e4e;
+}
