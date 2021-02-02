@@ -110,13 +110,15 @@ a {
 .banner .subnav li a {
   color: #fff;
 }
-.banner .subnav li a:hover {
-  color: #00b4ff;
-}
-.banner .subnav li span {
+.banner .subnav li a::after {
+  content: ">";
   float: right;
   margin-right: 21px;
 }
+.banner .subnav li a:hover {
+  color: #00b4ff;
+}
+
 .banner .carousel-dots {
   position: absolute;
   left: 50%;
