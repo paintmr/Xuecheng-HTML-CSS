@@ -268,72 +268,81 @@ a {
 .coding-courses {
   margin-top: 35px;
 }
-.coding-courses-head {
-  height: 40px;
-}
-.coding-courses-head > h3 {
+.coding-courses-l {
   float: left;
-  margin-right: 300px;
-  color: #494949;
+}
+.coding-courses-l-hd,
+.coding-courses-r-hd {
+  height: 40px;
+  line-height: 40px;
+}
+.coding-courses-l-hd > h3 {
+  float: left;
+  color: #000;
   font-size: 20px;
   font-weight: 400;
 }
-.coding-courses-head > ul {
-  float: left;
+.coding-courses-r {
+  float: right;
+  width: 960px;
 }
-.coding-courses-head > ul > li {
+
+.coding-courses-r-hd > ul {
+  float: left;
+  margin: 0 300px 0 200px;
+}
+.coding-courses-r-hd > ul > li {
   float: left;
   margin-left: 70px;
 }
-.coding-courses-head > ul > li > a {
+.coding-courses-r-hd > ul > li > a {
   color: #868686;
   font-size: 16px;
 }
-.coding-courses-head .active-color {
+.coding-courses-r-hd .active-color {
   color: #00a4ff;
 }
-.coding-courses-head > a {
+.coding-courses-r-hd > a {
   float: right;
   color: #a5a5a5;
   font-size: 12px;
 }
-.coding-courses-body-left {
-  float: left;
+.coding-courses-l-bd {
   width: 228px;
   height: 392px;
   background: url(./images/coding-courses-left.png) no-repeat;
 }
-.coding-courses-body-right {
+.coding-courses-r-bd {
   float: right;
 }
-.coding-courses-body-right-head {
+.coding-courses-r-bd-head {
   width: 957px;
   height: 100px;
   margin-left: 15px;
   margin-bottom: 25px;
   background: url(./images/coding-courses-right-top.png) no-repeat;
 }
-.coding-courses-body-right-bottom li {
+.coding-courses-r-bd-bottom li {
   float: left;
   width: 228px;
   height: 267px;
   margin-left: 15px;
   background-color: #fff;
 }
-.coding-courses-body-right-bottom h4 {
+.coding-courses-r-bd-bottom h4 {
   width: 185px;
   margin: 20px 25px 15px 25px;
   color: #050505;
   font-size: 14px;
   font-weight: 400;
 }
-.coding-courses-body-right-bottom div {
+.coding-courses-r-bd-bottom div {
   margin-left: 25px;
   height: 15px;
   color: #ff7c2d;
   font-size: 12px;
 }
-.coding-courses-body-right-bottom div span {
+.coding-courses-r-bd-bottom div span {
   margin-left: 5px;
   color: #999999;
 }
