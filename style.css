@@ -36,6 +36,13 @@ a {
   width: 198px;
   height: 43px;
 }
+.logo a {
+  display: block;
+  width: 198px;
+  height: 43px;
+  background: url(./images/header-logo.png) no-repeat;
+  font-size: 0;
+}
 .nav {
   float: left;
   margin: 0 72px 0 60px;
@@ -74,6 +81,7 @@ a {
   width: 50px;
   height: 42px;
   border: 0;
+  outline: none;
   background: url(images/header-nav-search.png) 0 -1px;
 }
 .user {
@@ -175,7 +183,7 @@ a {
   color: #a5a5a5;
   font-size: 12px;
 }
-.banner .course .course-detail a {
+.banner .course .course-detail > a {
   display: block;
   width: 200px;
   height: 40px;
@@ -294,11 +302,13 @@ a {
 .coding-courses-r-hd > ul > li {
   float: left;
   margin-left: 70px;
-}
-.coding-courses-r-hd > ul > li > a {
   color: #868686;
   font-size: 16px;
 }
+.coding-courses-r-hd > ul > li:hover {
+  cursor: pointer;
+}
+
 .coding-courses-r-hd .active-color {
   color: #00a4ff;
 }
@@ -308,21 +318,28 @@ a {
   font-size: 12px;
 }
 .coding-courses-l-bd {
+  display: block;
   width: 228px;
   height: 392px;
-  background: url(./images/coding-courses-left.png) no-repeat;
 }
 .coding-courses-r-bd {
   float: right;
 }
+.coding-courses-r-bd .tab-item-active {
+  display: block;
+}
+.tab-item {
+  display: none;
+}
 .coding-courses-r-bd-head {
+  display: block;
   width: 957px;
   height: 100px;
   margin-left: 15px;
   margin-bottom: 25px;
-  background: url(./images/coding-courses-right-top.png) no-repeat;
 }
 .coding-courses-r-bd-bottom li {
+  position: relative;
   float: left;
   width: 228px;
   height: 267px;
@@ -337,7 +354,9 @@ a {
   font-weight: 400;
 }
 .coding-courses-r-bd-bottom div {
-  margin-left: 25px;
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
   height: 15px;
   color: #ff7c2d;
   font-size: 12px;
@@ -347,7 +366,7 @@ a {
   color: #999999;
 }
 .footer {
-  height: 415px;
+  height: 300px;
   margin-top: 40px;
   background-color: #fff;
 }
@@ -360,7 +379,7 @@ a {
   color: #666;
   font-size: 12px;
 }
-.copyright a {
+.download {
   display: block;
   width: 118px;
   height: 33px;
