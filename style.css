@@ -102,7 +102,6 @@ a {
 }
 .banner .w {
   height: 421px;
-  background: url(images/banner-background.png) no-repeat top center;
 }
 .banner .subnav {
   float: left;
@@ -126,23 +125,61 @@ a {
 .banner .subnav li a:hover {
   color: #00b4ff;
 }
-
+.banner-pic-wrap {
+  position: relative;
+  float: left;
+  width: 750px;
+  height: 421px;
+  margin-left: 13px;
+  overflow: hidden;
+}
+.carousel {
+  position: relative;
+  width: 400%;
+  height: 100%;
+}
+.banner-pic-wrap ul li {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+.arrow {
+  position: absolute;
+  display: none;
+  top: 46%;
+  width: 20px;
+  height: 20px;
+  border-top: 10px solid #fff;
+  border-left: 10px solid #fff;
+}
+.arrow:hover {
+  cursor: pointer;
+}
+.arrow-l {
+  left: 9px;
+  transform: rotate(-45deg);
+}
+.arrow-r {
+  right: 10px;
+  transform: rotate(135deg);
+}
 .banner .carousel-dots {
   position: absolute;
   left: 50%;
-  margin-left: -117px;
+  transform: translateX(-50%);
   bottom: 35px;
 }
 .banner .carousel-dots li {
   float: left;
-}
-.banner .carousel-dots li a {
   display: block;
   width: 12px;
   height: 12px;
   margin-right: 17px;
   background-color: #64b6e6;
   border-radius: 50%;
+}
+.carousel-dots li:hover {
+  cursor: pointer;
 }
 .banner .carousel-dots .active {
   width: 20px;

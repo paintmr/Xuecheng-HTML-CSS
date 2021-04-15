@@ -78,14 +78,22 @@
             <a href="#">产品</a>
           </li>
         </ul>
-        <ul class="carousel-dots">
-          <li><a class="active" href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
+        <div class="banner-pic-wrap">
+          <ul class="carousel">
+            <li>
+              <a href="#"><img src="./images/banner1.png" alt="banner1" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/banner2.jpg" alt="banner2" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/banner3.jpg" alt="banner3" /></a>
+            </li>
+          </ul>
+          <div class="arrow arrow-l"></div>
+          <div class="arrow arrow-r"></div>
+          <ul class="carousel-dots"></ul>
+        </div>
         <div class="course">
           <h2>我的课程表</h2>
           <div class="course-detail">
@@ -513,38 +521,6 @@
       </ul>
     </div>
     <!-- career-plans end -->
-    <script>
-      // 搜索框聚焦和失去焦点
-      var search = document.getElementById("search");
-      search.onfocus = function () {
-        if (this.value === "输入关键词") {
-          this.value = "";
-        }
-        this.style.color = "#050505";
-      };
-      search.onblur = function () {
-        if (this.value === "") {
-          this.value = "输入关键词";
-          this.style.color = "#bfbfbf";
-        }
-      };
-      // 点击tab切换不同的页面
-      var codingCoursesTabList = document
-        .getElementById("coding-courses-tab-list")
-        .getElementsByTagName("li");
-      var codingCoursesTabItems = document.getElementsByClassName("tab-item");
-      for (let i = 0; i < codingCoursesTabList.length; i++) {
-        codingCoursesTabList[i].onclick = function () {
-          for (let i = 0; i < codingCoursesTabList.length; i++) {
-            codingCoursesTabList[i].className = "";
-          }
-          this.className = "active-color";
-          for (let i = 0; i < codingCoursesTabItems.length; i++) {
-            codingCoursesTabItems[i].className = "tab-item";
-          }
-          codingCoursesTabItems[i].className = "tab-item tab-item-active";
-        };
-      }
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
