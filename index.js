@@ -2,6 +2,7 @@
 // 1 搜索框聚焦和失去焦点
 // 2 点击编程入门的tab切换不同的页面
 // 3 轮播图
+// 4 （1）網頁滾動到banner上邊框與顯示屏重合時，左邊的職業發展position由absolute變成fixed。（2）網頁滾動到精品推薦nav上邊框與顯示屏重合時，顯示返回頂部按鈕。（3）點擊按鈕，返回頂部。
 
 
 // 搜索框聚焦和失去焦点
@@ -164,3 +165,42 @@ var timer = setInterval(function () {
 }, 2000);
 // 11 節流閥 防止連續點擊左右按鈕，圖片切換速度過快
 var flag = true;
+
+// 網頁滾動到精品推薦nav時，左邊的職業發展position由absolute變成fixed
+var banner = document.querySelector('.banner');
+var careerPlans = document.querySelector('.career-plans-tag');
+var recommendNav = document.querySelector('.recommendation-nav');
+var goTop = document.querySelector('.go-top');
+document.addEventListener('scroll', function () {
+  if (window.pageYOffset >= banner.offsetTop) {
+    careerPlans.style.position = 'fixed';
+    careerPlans.style.top = careerPlans.offsetTop + 'px';
+  } else {
+    careerPlans.style.position = 'absolute';
+    careerPlans.style.top = '150px';
+  }
+  // 網頁滾動到精品推薦nav上邊框與顯示屏重合時，顯示返回頂部按鈕。
+  if (window.pageYOffset >= recommendNav.offsetTop) {
+    goTop.style.display = 'block';
+  } else {
+    goTop.style.display = 'none';
+  }
+})
+// 點擊按鈕，返回頂部。
+goTop.addEventListener('click', function () {
+  animateY(window, 0);
+})
+// 垂直方向的緩動動畫函數
+function animateY(obj, target, callback) {
+  clearInterval(obj.timer);
+  obj.timer = setInterval(function () {
+    var step = (target - window.pageYOffset) / 10;
+    step = step > 0 ? Math.ceil(step) : Math.floor(step);
+    if (window.pageYOffset === target) {
+      clearInterval(obj.timer);
+      callback && callback();
+      return;
+    }
+    window.scroll(0, window.pageYOffset + step);
+  }, 15);
+}
