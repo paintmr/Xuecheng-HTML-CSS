@@ -19,6 +19,7 @@ search.onblur = function () {
     this.style.color = "#bfbfbf";
   }
 };
+
 // 点击编程入门的tab切换不同的页面
 var codingCoursesTabList = document
   .getElementById("coding-courses-tab-list")
@@ -36,8 +37,9 @@ for (let i = 0; i < codingCoursesTabList.length; i++) {
     codingCoursesTabItems[i].className = "tab-item tab-item-active";
   };
 }
+
 // 轮播图
-// 1 動畫函數
+// 1（四） 動畫函數
 function animate(obj, target, callback) {
   clearInterval(obj.timer);
   obj.timer = setInterval(function () {
@@ -57,7 +59,7 @@ function animate(obj, target, callback) {
     obj.style.left = obj.offsetLeft + step + "px";
   }, 15);
 }
-// 2 鼠標經過，顯示隱藏左右按鈕
+// 2(一) 鼠標經過，顯示隱藏左右按鈕
 var picsWrap = document.querySelector('.banner-pic-wrap');
 var arrowL = document.querySelector('.arrow-l');
 var arrowR = document.querySelector('.arrow-r');
@@ -76,7 +78,7 @@ picsWrap.addEventListener('mouseout', function () {
     arrowR.click()
   }, 2000);
 })
-// 3 根據圖片張數，動態生成底部按鈕。
+// 3（二） 根據圖片張數，動態生成底部按鈕。
 var pics = document.querySelector('.carousel');
 var dots = document.querySelector('.carousel-dots');
 for (let i = 0; i < pics.children.length; i++) {
@@ -85,7 +87,7 @@ for (let i = 0; i < pics.children.length; i++) {
     li.className = 'active';
   }
   dots.appendChild(li);
-  // 4 點擊底部按鈕，選中相應按鈕。生成li的時候綁定點擊事件
+  // 4（三） 點擊底部按鈕，選中相應按鈕。生成li的時候綁定點擊事件
   var picWidth = picsWrap.clientWidth;
   li.addEventListener("click", function () {
     // 把所有的按鈕變成非選中狀態，然後選中當前按鈕
@@ -99,7 +101,7 @@ for (let i = 0; i < pics.children.length; i++) {
     animate(pics, -picWidth * i);
   })
 }
-// 6 點擊右側按鈕播放圖片
+// 6（五） 點擊右側按鈕播放圖片
 // 6-1 克隆pic0，放到pics末尾
 var pic1 = pics.children[0].cloneNode(true);
 pics.appendChild(pic1);
@@ -133,7 +135,7 @@ arrowR.addEventListener('click', function () {
     }
   }
 })
-// 8 點擊左邊的按鈕滾動圖片
+// 8（六） 點擊左邊的按鈕滾動圖片
 arrowL.addEventListener('click', function () {
   // 11-3 設置節流閥
   if (flag) {
@@ -159,26 +161,31 @@ arrowL.addEventListener('click', function () {
     dots.children[dotI].className = 'active';
   }
 })
-// 10 自動播放，類似於設置了定時器定時點擊右邊的按鈕
+// 10（七） 自動播放，類似於設置了定時器定時點擊右邊的按鈕
 var timer = setInterval(function () {
   arrowR.click()
 }, 2000);
 // 11 節流閥 防止連續點擊左右按鈕，圖片切換速度過快
 var flag = true;
 
+
 // 網頁滾動到精品推薦nav時，左邊的職業發展position由absolute變成fixed
 var banner = document.querySelector('.banner');
 var careerPlans = document.querySelector('.career-plans-tag');
+
 var recommendNav = document.querySelector('.recommendation-nav');
 var goTop = document.querySelector('.go-top');
+
 document.addEventListener('scroll', function () {
   if (window.pageYOffset >= banner.offsetTop) {
     careerPlans.style.position = 'fixed';
-    careerPlans.style.top = careerPlans.offsetTop + 'px';
+    // careerPlans.style.top = careerPlans.offsetTop + 'px';
+    careerPlans.style.top = '150px'; //這條代碼和上面一樣
   } else {
     careerPlans.style.position = 'absolute';
     careerPlans.style.top = '150px';
   }
+
   // 網頁滾動到精品推薦nav上邊框與顯示屏重合時，顯示返回頂部按鈕。
   if (window.pageYOffset >= recommendNav.offsetTop) {
     goTop.style.display = 'block';
@@ -186,6 +193,7 @@ document.addEventListener('scroll', function () {
     goTop.style.display = 'none';
   }
 })
+
 // 點擊按鈕，返回頂部。
 goTop.addEventListener('click', function () {
   animateY(window, 0);
