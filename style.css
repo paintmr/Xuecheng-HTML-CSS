@@ -244,6 +244,7 @@ a {
   background: rgba(28, 3, 108, 0.7);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 999;
 }
 .career-plans-tag a {
   color: #fff;
@@ -254,7 +255,7 @@ a {
 .career-plans {
   display: none;
   position: fixed;
-  top: 25%;
+  top: 15%;
   left: 0;
   padding: 10px 10px 0 10px;
   background-color: #fff;
